@@ -1,0 +1,7 @@
+name = "discord-flip"
+main = "src/index.js"
+compatibility_date = "2026-09-27"
+
+[vars]
+# Configure FLIP_GIF_URL in the Cloudflare dashboard.
+# DISCORD_PUBLIC_KEY should be configured as a Worker secret.
