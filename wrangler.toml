@@ -1,4 +1,4 @@
-name = "discord-flip"
+name = "ducklings-commands-bot"
 main = "src/index.js"
 compatibility_date = "2026-09-27"
 
