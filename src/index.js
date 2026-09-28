@@ -84,19 +84,9 @@ export default {
       const response = {
         type: 4,
         data: {
-          content: `<@${userId}> got flipped.`
+          content: `<@${userId}> got flipped[.](${env.FLIP_GIF_URL})`
         }
       };
-
-      if (env.FLIP_GIF_URL) {
-        response.data.embeds = [
-          {
-            image: {
-              url: env.FLIP_GIF_URL
-            }
-          }
-        ];
-      }
 
       return Response.json(response);
     }
