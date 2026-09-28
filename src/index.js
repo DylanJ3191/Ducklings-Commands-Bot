@@ -1,4 +1,5 @@
 const DISCORD_API = "https://discord.com/api/v10";
+const FLIP_GIF_URL = "https://klipy.com/gifs/get-flipped-idiot-cube-flip";
 
 function hexToBytes(hex) {
   const bytes = new Uint8Array(hex.length / 2);
@@ -43,7 +44,7 @@ function getOption(options, name) {
 export default {
   async fetch(request, env) {
     if (request.method !== "POST") {
-      return new Response("Discord Flip Worker is running.", { status: 200 });
+      return new Response("NameDuckling770's Commands Bot is running.", { status: 200 });
     }
 
     if (!(await verifyDiscordRequest(request, env.DISCORD_PUBLIC_KEY))) {
@@ -84,7 +85,7 @@ export default {
       const response = {
         type: 4,
         data: {
-          content: `<@${userId}> got flipped[.](${env.FLIP_GIF_URL})`
+          content: `<@${userId}> got flipped[.](${FLIP_GIF_URL})`
         }
       };
 
