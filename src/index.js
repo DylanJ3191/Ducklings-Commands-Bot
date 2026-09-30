@@ -77,11 +77,6 @@ export default {
         });
       }
 
-      const displayName =
-        targetUser.global_name ||
-        targetUser.username ||
-        "That user";
-
       const response = {
         type: 4,
         data: {
