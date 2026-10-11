@@ -80,7 +80,8 @@ export default {
       const response = {
         type: 4,
         data: {
-          content: `<@${userId}> got flipped[.](${FLIP_GIF_URL})`
+          content: `<@${userId}> got flipped[.](${FLIP_GIF_URL})`,
+          flags: 4096
         }
       };
 
